@@ -1,0 +1,38 @@
+<!--Ejercicio #3
+Escriba una función y llámela al hacer clic en un botón para mostrar una alerta con:
+
+1. El número de enlaces en la página.
+2. El primer enlace de la página.
+3. El último enlace de la página.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<button onclick="getAlert();">Dame alerta</button><br><br>
+    <a id="primerElemento">https://github.com/generation-org/JS/tree/master/JS-06%20-%20DOM%20Manipulation</a><br><br>
+    <a class="segundoElemento">https://www.w3schools.com/js/tryit.asp?filename=tryjs_doc_links</a><br><br>
+    <a class="tercerElemento">https://www.youtube.com/watch?v=Rbzu8sUaZK4&ab_channel=Nemo%27sDreamscapes</a><br><br>
+    <script>
+    
+    	function getAlert(){
+        	var numElementos = document.getElementsByTagName("a");
+           // alert(numElementos.length);
+
+            var PrimerElemento=document.getElementsById("primerElemento");
+            
+            alert(PrimerElemento);
+
+            var tercerElemento=document.getElementsByClassName("tercerElemento");
+            alert(tercerElemento);
+        }
+    
+    </script>
+    
+</body>
+</html>
